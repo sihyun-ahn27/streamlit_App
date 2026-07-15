@@ -565,25 +565,3 @@ sample_csv = '''주차장명,주소,주차요금,위도,경도
 샘플 공영주차장 B,서울특별시 종로구 예시로 2,"1시간 2,000원",37.5720,126.9794
 샘플 공영주차장 C,서울특별시 용산구 테스트로 3,"10분당 500원",37.5326,126.9900
 '''.strip()
-
-readme = '''
-# 공영주차장 정보 안내 Streamlit 앱
-
-## 파일
-- `app.py`: Streamlit 앱 코드
-- `requirements.txt`: 설치 라이브러리
-- `sample_parking.csv`: 테스트용 예시 CSV
-
-## CSV 권장 열
-- 주차장명
-- 주소
-- 주차요금
-- 위도
-- 경도
-
-열 이름이 다르면 앱 왼쪽의 `열 연결 설정`에서 직접 선택할 수 있습니다.
-
-## 로컬 실행
-```bash
-pip install -r requirements.txt
-streamlit run app.py
