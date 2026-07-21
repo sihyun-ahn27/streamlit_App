@@ -1,3 +1,16 @@
+import streamlit as st
+import requests
+import pandas as pd
+
+def get_service_key():
+    try:
+        return st.secrets["TOUR_API"]
+    except KeyError:
+        st.error("TOUR_API가 Streamlit Secrets에 설정되어 있지 않습니다.")
+        st.stop()
+
+def get_festival(area, keyword):
+    SERVICE_KEY = get_service_key()
 import requests
 import pandas as pd
 import streamlit as st
